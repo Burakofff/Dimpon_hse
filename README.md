@@ -1,6 +1,16 @@
 # Dimpon_hse
 
+## Project Description
+
+The purpose of this work was to develop a classification model that allows predicting the mental health condition of employees at remote work.For model interaction, a user-friendly web interface was developed using the Streamlit framework. Additionally, a FastAPI-based RESTful service was implemented to facilitate future integration of the model into external systems.
+
+## Streamlit app
+
+The application is available at the link below
+https://dimponhse-appyb9pn7fx8rlp5zpwbztr.streamlit.app/
+
 ## Repository Structure
+```text
 Dimpon_hse/
 ├── fastapi_app/ # Backend: FastAPI API for interacting with the ML model
 │ ├── api.py # Main API code
