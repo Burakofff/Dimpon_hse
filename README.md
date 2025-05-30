@@ -24,7 +24,7 @@ Dimpon_hse/
 │ └── model.pkl # Serialized ML model (pickle format)
 │
 ├── notebooks/ # Jupyter notebooks with a pipeline of model classification development
-│ └── final_model.pkl # Final model file with a full pipeline of model development
+│ └── final_model.ipynb # Final model file with a full pipeline of model development
 │
 ├── .gitignore # Git ignore rules
 └── README.md # Current project documentation file
