@@ -9,7 +9,6 @@ from pathlib import Path
 # Configure Streamlit page settings
 st.set_page_config(
     page_title="Mental Health Assessment Tool",
-    page_icon="🧠",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -136,37 +135,29 @@ def conv_cat_to_numeric(df):
     """
     df_res = df.copy()
 
-    # Map stress levels to numeric values
     stress_mapping = {'Low': 0, 'Medium': 1, 'High': 2}
     df_res['stress_level'] = df_res['stress_level'].map(stress_mapping)
 
-    # Map gender to numeric values
     gender_mapping = {'Male': 1, 'Female': 0}
     df_res['gender'] = df_res['gender'].map(gender_mapping).astype(int)
 
-    # Map mental health resources access to numeric values
     stress_mapping = {'Yes': 1, 'No': 0}
     df_res['access_to_mental_health_resources'] = df_res['access_to_mental_health_resources'].map(
         stress_mapping).astype(int)
 
-    # Map productivity change to numeric values
     mapping = {'Decrease': -1, 'No Change': 0, 'Increase': 1}
     df_res['productivity_change'] = df_res['productivity_change'].map(mapping).astype(int)
 
-    # Map satisfaction with remote work to numeric values
     mapping = {'Unsatisfied': -1, 'Neutral': 0, 'Satisfied': 1}
     df_res['satisfaction_with_remote_work'] = df_res['satisfaction_with_remote_work'].map(mapping).astype(int)
 
-    # Map work location to numeric values
     work_location_mapping = {'Onsite': 0, 'Hybrid': 1, 'Remote': 2}
     df_res['work_location'] = df_res['work_location'].map(work_location_mapping).astype(int)
 
-    # Map physical activity to numeric values
     df_res['physical_activity'] = df_res['physical_activity'].fillna(0)
     physical_activity_mapping = {0: 0, 'Weekly': 1, 'Daily': 2}
     df_res['physical_activity'] = df_res['physical_activity'].fillna(0).map(physical_activity_mapping)
 
-    # Map sleep quality to numeric values
     physical_activity_mapping = {'Average': 0, 'Poor': 1, 'Good': 2}
     df_res['sleep_quality'] = df_res['sleep_quality'].fillna(0).map(physical_activity_mapping)
 
