@@ -181,7 +181,7 @@ def main():
         st.write("""
         1. Choose input method (file upload or manual entry)
         2. Fill in all required information
-        3. Get assessment results and recommendations
+        3. Get assessment results
         """)
         
         st.header("Data Privacy")
