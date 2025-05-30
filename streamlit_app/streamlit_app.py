@@ -8,7 +8,7 @@ from pathlib import Path
 
 # Configure Streamlit page settings
 st.set_page_config(
-    page_title="Mental Health Assessment Tool",
+    page_title="Mental Health Condition Assessment Tool",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -168,7 +168,7 @@ def main():
     Main function to run the Streamlit application.
     Handles both file upload and manual input scenarios.
     """
-    st.title("Mental Health Assessment Tool")
+    st.title("Mental Health Condition Assessment Tool")
     
     # Sidebar with application information
     with st.sidebar:
